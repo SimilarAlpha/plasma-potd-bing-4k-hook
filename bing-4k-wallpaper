@@ -1,0 +1,14 @@
+#!/bin/bash
+x="                    const w ="
+y="                    const w = 3840;"
+sed -i -e "s/^$x.*/$y/" "/usr/share/plasma/wallpapers/org.kde.potd/contents/ui/main.qml"
+x="                    const h ="
+y="                    const h = 2160;"
+sed -i -e "s/^$x.*/$y/" "/usr/share/plasma/wallpapers/org.kde.potd/contents/ui/main.qml"
+
+x="                const w ="
+y="                const w = 3840;"
+sed -i -e "s/^$x.*/$y/" "/usr/share/plasma/wallpapers/org.kde.potd/contents/ui/config.qml"
+x="                const h ="
+y="                const h = 2160;"
+sed -i -e "s/^$x.*/$y/" "/usr/share/plasma/wallpapers/org.kde.potd/contents/ui/config.qml"

@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = kdeplasma-addons
+
+[Action]
+Description = Patching Bing wallpaper provider to use UHD resolution
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/bing-4k-wallpaper
+Depends = sed
